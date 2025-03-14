@@ -1,5 +1,8 @@
 import BowlersList from "./BowlingLeague";
 import "./App.css";
+// This file just returns our header explaining the page, and also runs the BowlingLeague.tsx
+// functions to display our data on the page
+
 
 function Header() {
   return (

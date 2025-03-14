@@ -11,6 +11,9 @@ public partial class Team
     public string TeamName { get; set; } = null!;
 
     public int? CaptainId { get; set; }
+    // JsonIgnore helps the program avoid an infinite loop while pulling data from the databse
+    // In the future I'd remove the ICollection stuff and define the PK/FK relationships
+    // more firmly, but Professor Hilton said this is fine
 
     [JsonIgnore]
     public virtual ICollection<Bowler> Bowlers { get; set; } = new List<Bowler>();

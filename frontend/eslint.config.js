@@ -1,3 +1,6 @@
+// I've configured this page just enough for eslint and prettier to work together to improve the
+// cleanliness of my code
+
 import js from "@eslint/js";
 import globals from "globals";
 import reactHooks from "eslint-plugin-react-hooks";
